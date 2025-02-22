@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Ticket Booking</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid">
+    <div class="main">
+        <header class="text-center"><h3>Flight Ticket Booking</h3></header>
+        <section class="mt-3">
+            <dl>
+                <dt>Select class:</dt>
+                <dd>
+                    <select class="form-select w-75" id="ticketClass">
+                        <option>Select a class</option>
+                        <option>Economy</option>
+                        <option>Business</option>
+                        <option>First Class</option>
+                    </select>
+                </dd>
+                <dt>Enter Luggage Weight(kg):</dt>
+                <dd>
+                    <input type="number" class="form-control w-75" id="luggagelist">
+                </dd>
+                <dt>Are you student?</dt>
+                <dd>
+                    <select class="form-select w-75" id="isStudent">
+                        <option>Yes(-15% Discount)</option>
+                        <option>No</option>
+                    </select>
+                </dd>
+                <dt>Are you senior(60+ years)?</dt>
+                <dd>
+                    <select class="form-select w-75 " id="isSenior">
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </dd>
+
+            </dl>
+        </section>
+        <footer>
+            <button class="btn btn-dark ms-5" onclick="claculateFare()">Calculate Fare</button>
+            <h6 id="total" class="mt-2 ms-5"></h6>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

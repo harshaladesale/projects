@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    background-image: url("../FlightTicketBooking/background.jpg");
+    background-size: cover;
+    height: 90vh;
+}
+.main{
+    height: 470px;
+    width: 450px;
+    padding: 4%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    background:rgba(215, 194, 186, 0.6);
+    backdrop-filter: blur(0px);
+    border-radius: 3%;
+}       
