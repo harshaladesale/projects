@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket</title>
+    <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid">
+    <div class="main">
+        <h3 class="">Movie Ticket Booking</h3>
+        <dl class="mt-2">
+            <dd>Enter Name:</dd>
+            <dd><input type="text" name="UserName" class="form-control w-75" id="Name"></dd>
+            <dd>Select Movie:</dd>
+            <dd>
+                <select class="form-select w-75" id="selShow" name="MovieName">
+                    <option>select show</option>
+                    <option value="Chaava">Chaava</option>
+                    <option value="KGF">KGF</option>
+                    <option value="Sultan">Sultan</option>
+                    <option value="Baby John">Baby John</option>
+                </select>
+            </dd>
+            <dd >Select Show Time:</dd>
+            <dd>
+               <select class="form-select w-75" id="showTime" name="ShowTime">
+                    <option>Select</option>
+                    <option value="12:20 PM">12:20 PM</option>
+                    <option value="2:40 PM">2:40 PM</option>
+                    <option value="5:10 PM">5:10 PM</option>
+                    <option value="7:10 PM">7:10 PM</option>
+                    
+               </select>
+            </dd>
+            <dd>Select No of ticket:</dd>
+            <dd><input type="number" value="1" min="1" name="NoofTicket" class="form-control w-75" id="nofTickets"></dd>
+            <dd>Select Seat type:</dd>
+            <dd>
+                <select class="form-select w-75" id="selSeat" name="SeatType">
+                    <option>select seat</option>
+                    <option value="Silver &#8377; 150">Silver &#8377; 150</option>
+                    <option value="Gold &#8377; 200">Gold &#8377; 200</option>
+                    <option value="Executive &#8377; 250">Executive &#8377; 250</option>
+                    <option value="Sofa &#8377; 300">Sofa &#8377; 300</option>
+                </select>
+            </dd>
+        </dl>
+        <button class="btn btn-outline-dark mt-1 ms-5 " onclick="btnclick()" data-bs-toggle="modal" data-bs-target="#billsummary">Book Ticket</button>
+        <h6 id="total" class="mt-2 ms-5"></h6>
+
+        <div class="modal" id="billsummary">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Booking Successfully..</h3>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <dl class="row">
+                            <dt class="col-4">Name:</dt>
+                            <dd class="col-7" id="txtName"></dd>
+                            <dt class="col-4">Movie name:</dt>
+                            <dd class="col-7" id="txtMovie"></dd>
+                            <dt class="col-4">Show time:</dt>
+                            <dd class="col-7" id="txtShow"></dd>
+                            <dt class="col-4">No of ticket:</dt>
+                            <dd class="col-7" id="txtTicket"></dd>
+                            <dt class="col-4">Seat type:</dt>
+                            <dd class="col-7" id="txtType"></dd>
+                            <dt class="col-4">Total bill:</dt>
+                            <dd class="col-7" id="txtBill"></dd>
+
+                        </dl>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-dark" data-bs-dismiss="modal" onclick="clearClick()">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script src="../jquery/dist/jquery.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
