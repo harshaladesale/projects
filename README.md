@@ -29,16 +29,16 @@ This repository contains a collection of small projects I built using HTML, CSS,
 ![Tip Calculator](screenshot/calculator.png)  
 
 ### Flight Ticket Booking  
-![Flight Ticket Booking] (screenshot/flight.png)  
+![Flight Ticket Booking](screenshot/flight.png)  
  
 ### Dice Roll Simulator  
-![Dice Roll Simulator] (screenshot/dice.png)  
+![Dice Roll Simulator](screenshot/dice.png)  
 
-### Grocery list  
-![Grocery List] (screenshot/grocery.png)  
+### Grocery List Manager   
+![Grocery List Manager](screenshot/grocery.png)  
 
 ### Age Calculater  
-![Age Calculater] (screenshot/calculator.png)  
+![Age Calculater](screenshot/age.png)  
 
 
 Features:
