@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            background-image: url("../public/assets/word\ guess.jpg");
+            background-size: cover;
+        }
+        
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="card w-25 m-5 p-4 text-center"> 
+        <h2 class="bg-secondary-subtle">Guess The Word</h2>
+        <p><b>Hint:</b>A Programming language</p>
+        <p id="display-Word"></p>
+        <p>Guess One letter: <input type="text" size="1" id="txtName"></p>
+        <button onclick="submitClick()" id="submitBtn" class="w-50 ms-5 btn btn-secondary">Submit</button>
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

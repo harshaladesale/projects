@@ -1,0 +1,17 @@
+body{
+    background-image: url("../public/assets/calculate1.jpg");
+    background-size: cover;
+    height: 90vh;
+}
+.container{
+    border: 2px solid rgb(14, 13, 13);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin-left: 30%;
+    margin-top: 5%;
+    height: 50%;
+    width: 40%;
+    padding: 3%;
+    border-radius: 2%;
+    background: aliceblue;
+}
+        
