@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid">
+    <div class="main text-center border border-black">
+        <h3>AGE CALCULATOR</h3>
+        <div>
+            <h6 class="mt-3">Enter your Date of Birth</h6>
+            <input type="date" class="w-50" id="birthDate" value="">
+        </div>
+        <div>
+            <h6 class="mt-4">Current Date</h6>
+            <input type="Date" class="w-50 " id="currDate" value="">
+        </div>
+        <div>
+            <button type="button" class="btn btn-dark mt-4" onclick="calculateClick()">Calculate</button>
+            <div id="empty" class="mt-2"></div>
+        </div>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
